@@ -12,7 +12,7 @@ import { ChatService, ChatMessage } from '../services/chat.service';
     <div class="max-w-4xl mx-auto px-4">
       <div class="rounded-lg border bg-card text-card-foreground shadow-sm relative">
         <!-- Chat Messages -->
-        <div #chatContainer class="h-[500px] overflow-y-auto p-6 space-y-4" (scroll)="onScroll()">
+        <div #chatContainer class="h-[550px] overflow-y-auto p-6 space-y-4" (scroll)="onScroll()">
           <div *ngFor="let message of messages$ | async" 
                [class.text-right]="message.isUser"
                class="animate-fade-in">
