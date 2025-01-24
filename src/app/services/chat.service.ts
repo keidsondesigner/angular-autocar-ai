@@ -13,7 +13,7 @@ export interface ChatMessage {
   providedIn: 'root'
 })
 export class ChatService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://api-keidsonroby-ai.onrender.com';
 
   private messagesSubject = new BehaviorSubject<ChatMessage[]>([]);
   messages$ = this.messagesSubject.asObservable();
